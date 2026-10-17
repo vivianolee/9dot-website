@@ -248,3 +248,10 @@ img, svg { display: block; max-width: 100%; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Corporate information and contact links */
+.company-facts dd { min-width: 0; overflow-wrap: anywhere; }
+.company-facts dd a { text-decoration: underline; text-underline-offset: 4px; }
+.footer-info a { overflow-wrap: anywhere; }
+.status-badge:focus-visible, .company-facts a:focus-visible { outline: 2px solid var(--lime); outline-offset: 5px; }
+.contact-copy .button { max-width: 100%; overflow-wrap: anywhere; }
