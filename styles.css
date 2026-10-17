@@ -11,15 +11,10 @@ img { display:block; max-width:100%; }
 .skip-link:focus { top:12px; }
 a:focus-visible,button:focus-visible { outline:2px solid var(--accent); outline-offset:6px; }
 ::selection { background:var(--accent); color:white; }
-.site-header { position:sticky; top:0; z-index:100; background:rgba(255,255,255,.96); border-bottom:1px solid var(--line); }
+.site-header { position:relative; top:auto; z-index:100; background:rgba(255,255,255,.96); border-bottom:1px solid var(--line); }
 .nav-wrap { min-height:94px; display:flex; align-items:center; justify-content:space-between; gap:28px; }
 .brand { display:inline-flex; align-items:center; font-size:20px; font-weight:650; letter-spacing:.04em; }
-.brand-lockup { display:inline-flex; align-items:center; gap:12px; padding:0; background:white; flex:none; }
-.ninedot-symbol,.ninedot-wordmark { display:block; position:relative; overflow:hidden; flex:none; }
-.ninedot-symbol { width:28px; height:32.42px; }
-.ninedot-symbol>img { position:absolute; max-width:none; width:82.616px; height:82.616px; left:-26.814px; top:-16.273px; }
-.ninedot-wordmark { width:120px; height:28.73px; }
-.ninedot-wordmark>img { position:absolute; max-width:none; width:211.944px; height:211.944px; left:-45.972px; top:-136.901px; }
+.brand-lockup { display:inline-flex; align-items:center; gap:12px; width:160px; height:34px; overflow:hidden; padding:0; background:white; flex:none; }
 .primary-nav { display:flex; gap:38px; align-items:center; font-size:14px; font-weight:500; }
 .primary-nav a:hover { color:var(--accent); }
 .primary-nav a:last-child { margin-left:20px; }
