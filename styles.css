@@ -70,7 +70,6 @@ img, svg { display: block; max-width: 100%; }
 .hero-points { display: flex; flex-wrap: wrap; gap: 11px 24px; margin: 32px 0 0; padding: 0; list-style: none; color: #c5cede; font-size: .88rem; }
 .hero-points li::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--lime); margin: 0 9px 1px 0; }
 
-.hero-visual { position: relative; min-height: 510px; display: grid; place-items: center; }
 
 .trust-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.018); }
 .trust-grid { min-height: 90px; display: grid; grid-template-columns: repeat(3,1fr); align-items: center; }
@@ -178,7 +177,7 @@ img, svg { display: block; max-width: 100%; }
   .hero { min-height: auto; }
   .hero-layout,.about-layout,.process-layout { grid-template-columns: 1fr; gap: 55px; }
   .hero-copy { padding-top: 30px; }
-  .hero-visual { min-height: 470px; }
+
   .service-grid { grid-template-columns: repeat(2,1fr); }
   .product-card,.product-kasa { grid-template-columns: 1fr; }
   .product-preview { min-height: 500px; }
@@ -196,7 +195,7 @@ img, svg { display: block; max-width: 100%; }
   .hero { padding: 130px 0 80px; }
   .hero h1 { font-size: clamp(3rem, 16vw, 5rem); }
   .hero-text { font-size: 1rem; }
-  .hero-visual { min-height: 390px; }
+
   .trust-grid { grid-template-columns: 1fr; padding: 12px 0; }
   .trust-grid p { padding: 14px; border-right: 0; border-bottom: 1px solid var(--line); }
   .trust-grid p:last-child { border-bottom: 0; }
@@ -253,7 +252,11 @@ img, svg { display: block; max-width: 100%; }
 .ninedot-symbol > img { position: absolute; max-width: none; width: 82.616px; height: 82.616px; left: -26.814px; top: -16.273px; }
 .ninedot-wordmark { width: 120px; height: 28.73px; }
 .ninedot-wordmark > img { position: absolute; max-width: none; width: 211.944px; height: 211.944px; left: -45.972px; top: -136.901px; }
-.ninedot-brand-panel { width: min(100%, 430px); padding: 32px; background: #fff; border: 1px solid rgba(255,255,255,.2); border-radius: 4px; }
-.ninedot-brand-art { position: relative; width: 100%; aspect-ratio: 750 / 775; overflow: hidden; }
-.ninedot-brand-art > img { position: absolute; max-width: none; width: 167.2%; height: auto; left: -33.333333%; top: -29.032258%; }
-@media(max-width:600px) { .ninedot-brand-panel { width: min(100%, 350px); padding: 24px; } }
+
+/* Keep the identity once in the masthead; let the introduction carry the hero. */
+.hero { min-height: 700px; padding: 150px 0 96px; }
+.hero-layout { display: block; }
+.hero-copy { max-width: 1000px; }
+.hero h1 { font-size: clamp(3rem, 6.3vw, 6.2rem); line-height: 1.12; }
+.hero-text { max-width: 640px; }
+@media(max-width:600px) { .hero { min-height: auto; padding: 132px 0 76px; } }
